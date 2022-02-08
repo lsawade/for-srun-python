@@ -1,6 +1,7 @@
 #! /bin/bash
 #SBATCH -t 0:5:0
-#SBATCH --ntasks=5
+#SBATCH --nodes=1
+#SBATCH --ntasks=32
 #SBATCH --cpus-per-task=4
 #SBATCH --ntasks-per-core=1
 
