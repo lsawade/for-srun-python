@@ -29,7 +29,5 @@ Note that each submission file contains the statement:
 ```
 This is unique to Traverse and can be removed for the Intel clusters on the Princeton clusters.
 SLURM seems to have issue with non-explicit submission of tasks with the 4 hardware thread setup
-that the POWER9 CPU has.
-
-
-
+that the POWER9 CPU has. Removing `--ntasks-per-core=1` does work, but is slower in subsequent
+submission. Removing `#SBATCH --cpus-per-task=4` does not work.
