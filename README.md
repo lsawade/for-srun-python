@@ -14,7 +14,7 @@ It does the same thing three different ways:
    ```bash
    sbatch parent.sh
    ```
-3 `sbatch` script entirely based on python.
+3. `sbatch` script entirely based on python.
    ```bash
    sbatch for.py
    ```
