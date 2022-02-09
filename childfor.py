@@ -29,7 +29,7 @@ for _p in params:
     # Adding it to the process list. Note the .split() Popen doesn't want a single string.
     # Also the stderr is sent to PIPE because f/stdout is sent to file. PIPE could be
     # replaced by an error log.
-    process_list.append(Popen(cmd.split(), stdout=f, stderr=PIPE, cwd='./'))
+    process_list.append(Popen(cmd.split(), stdout=f, stderr=None, cwd='./'))
 
 # Wait for the processes to finish
 for _proc, _f in zip(process_list, outfile_list):
