@@ -5,19 +5,19 @@ This is a python version of https://github.com/luet/while-loop-srun
 It does the same thing three different ways:
 
 
-[1] `sbatch` script with `bash` loop to run `code.py`
-    ```bash
-    sbatch while.sh
-    ```
-[2] `sbatch` script that calls a `python` script that handles
-    submission within a for loop
-    ```bash
-    sbatch parent.sh
-    ```
-[3] `sbatch` script entirely based on python.
-    ```bash
-    sbatch for.py
-    ```
+1. `sbatch` script with `bash` loop to run `code.py`
+   ```bash
+   sbatch while.sh
+   ```
+2. `sbatch` script that calls a `python` script that handles
+   submission within a for loop
+   ```bash
+   sbatch parent.sh
+   ```
+3 `sbatch` script entirely based on python.
+   ```bash
+   sbatch for.py
+   ```
     
 All three have their place and do the same thing, and handle srun the same
 way but their exectution and setup differs.
